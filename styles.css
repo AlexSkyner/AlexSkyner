@@ -159,6 +159,48 @@ h2 {
 	margin-bottom: 15px;
 }
 
+.accent {
+	padding: 60px 45px 30px 45px;
+
+	background-color: #5cacdc;
+}
+
+.hobby> i {
+	display: block;
+
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+
+	text-align: center;
+
+	border-radius: 50%;
+	background-color: #0b3954;
+
+	font-size: 72px;
+	line-height: 150px;
+}
+
+.hobby> h5 {
+	margin-top: 15px;
+
+	text-align: center;
+
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 40px;
+}
+
+.hobby> p {
+	text-align: center;
+
+	opacity: .9;
+
+	font-size: 14px;
+	font-weight: 300;
+}
+
 @media (max-width: 768px) {
 	.photo {
 		margin: 60px auto 0 auto;
