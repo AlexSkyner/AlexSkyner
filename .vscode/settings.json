@@ -1,0 +1,10 @@
+{
+	"editor.autoIndent": true,
+	"editor.tabCompletion": true,
+	"editor.renderIndentGuides": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": true,
+	"editor.renderWhitespace": "boundary",
+	"files.insertFinalNewline": true,
+	"csscomb.preset": "csscomb.json"
+}

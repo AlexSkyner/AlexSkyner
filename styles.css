@@ -1,0 +1,62 @@
+body {
+	background-image: url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
+	background-position: top center;
+}
+
+.photo {
+	width: 200px;
+	height: 200px;
+
+	border-radius: 50%;
+	background-image: url('/photo.jpg');
+	background-size: cover;
+}
+
+.row {
+	position: relative;
+
+	overflow: hidden;
+}
+
+.row.dark {
+	background-color: #040e17;
+}
+
+.row.glass> div {
+	z-index: 22;
+}
+
+.row.glass::before {
+	position: absolute;
+	top: -15px;
+	left: -15px;
+
+	display: block;
+	overflow: hidden;
+
+	width: calc(100% + 30px);
+	height: calc(100% + 30px);
+
+	content: ' ';
+
+	background-image: url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
+	background-position-x: center;
+	background-position-y: top;
+
+	filter: blur(25px);
+}
+
+.row.glass::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: calc(100%);
+	height: calc(100%);
+
+	content: ' ';
+
+	background-color: rgba(255,255,255,.05);
+}
