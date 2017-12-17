@@ -1,32 +1,121 @@
 body {
-	background-image: url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
+	color: #fffffa;
+	background: #040e17 url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
+	background-repeat: no-repeat;
 	background-position: top center;
+
+	font-family: 'Roboto', 'Segoe UI', 'Verdana', 'Tahoma', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', 'Segoe UI', 'Verdana', 'Tahoma', sans-serif;
+}
+
+h2 {
+	margin-bottom: 30px;
 }
 
 .photo {
 	width: 200px;
 	height: 200px;
+	margin: 60px auto;
 
 	border-radius: 50%;
 	background-image: url('/photo.jpg');
 	background-size: cover;
 }
 
-.row {
+.info {
+	position: relative;
+
+	min-height: 200px;
+}
+
+.info> div {
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	width: 100%;
+
+	transform: translateY(-50%);
+}
+
+.info> div> h1 {
+	margin-bottom: 0;
+
+	font-size: 36px;
+	font-weight: 300;
+}
+.info> div> h2 {
+	margin-bottom: 0;
+
+	opacity: .62;
+
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.info> div> p {
+	margin-bottom: 15px;
+
+	opacity: .38;
+
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.social {
+	height: 24px;
+
+	line-height: 24px;
+}
+
+.social> a {
+	display: inline-block;
+
+	width: 24px;
+	height: 24px;
+	margin: 0 10px 0 0;
+	padding: 0;
+
+	text-align: center;
+	vertical-align: top;
+
+	color: #fffffa;
+
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.social> a> img {
+	display: block;
+
+	width: 24px;
+	height: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
 	position: relative;
 
 	overflow: hidden;
+
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.38);
 }
 
 .row.dark {
-	background-color: #040e17;
+	padding: 60px 45px;
+
+	background-color: rgba(4, 14, 23, 0.62);
 }
 
-.row.glass> div {
+.container.glass> div.row {
 	z-index: 22;
 }
 
-.row.glass::before {
+.container.glass::before {
 	position: absolute;
 	top: -15px;
 	left: -15px;
@@ -39,24 +128,83 @@ body {
 
 	content: ' ';
 
-	background-image: url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
+	background: #040e17 url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
+	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: top;
 
 	filter: blur(25px);
 }
 
-.row.glass::after {
-	position: absolute;
-	top: 0;
-	left: 0;
+.container.glass> div.row {
+	position: relative;
+}
 
+.progress {
+	background-color: #0b3954;
+}
+
+.progress-bar {
+	background-color: #5cacdc;
+}
+
+.skills .progress {
+	margin-bottom: 15px;
+}
+
+.accent {
+	padding: 60px 45px 30px 45px;
+
+	background-color: rgba(92, 172, 220, 0.62);
+}
+
+.hobby> i {
 	display: block;
 
-	width: calc(100%);
-	height: calc(100%);
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	padding-bottom: 30px;
 
-	content: ' ';
+	text-align: center;
 
-	background-color: rgba(255,255,255,.05);
+	border-radius: 50%;
+	background-color: rgba(11, 57, 84, 0.62);
+
+	font-size: 72px;
+	line-height: 150px;
+}
+
+.hobby> h5 {
+	margin-top: 15px;
+
+	text-align: center;
+
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 40px;
+}
+
+.hobby> p {
+	text-align: center;
+
+	opacity: .9;
+
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.track {
+	margin-bottom: 60px;
+}
+
+
+@media (max-width: 768px) {
+	.photo {
+		margin: 60px auto 0 auto;
+	}
+
+	.info> div> * {
+		text-align: center;
+	}
 }
