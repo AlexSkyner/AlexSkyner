@@ -111,6 +111,14 @@ h2 {
 	background-color: rgba(4, 14, 23, 0.62);
 }
 
+.row.vid {
+	background-color: rgba(4, 14, 23, 0.62);
+}
+
+.row.vid> div {
+	padding: 0;
+}
+
 .container.glass> div.row {
 	z-index: 22;
 }
@@ -141,7 +149,7 @@ h2 {
 }
 
 .progress {
-	background-color: #0b3954;
+	background-color: rgba(11, 57, 84, 0.62);
 }
 
 .progress-bar {
