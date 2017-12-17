@@ -1,15 +1,99 @@
 body {
+	color: #fffffa;
 	background-image: url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
 	background-position: top center;
+
+	font-family: 'Roboto', 'Segoe UI', 'Verdana', 'Tahoma', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', 'Segoe UI', 'Verdana', 'Tahoma', sans-serif;
+}
+
+h2 {
+	margin-bottom: 30px;
 }
 
 .photo {
 	width: 200px;
 	height: 200px;
+	margin: 60px auto;
 
 	border-radius: 50%;
 	background-image: url('/photo.jpg');
 	background-size: cover;
+}
+
+.info {
+	position: relative;
+
+	min-height: 200px;
+}
+
+.info> div {
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	width: 100%;
+
+	transform: translateY(-50%);
+}
+
+.info> div> h1 {
+	margin-bottom: 0;
+
+	font-size: 36px;
+	font-weight: 300;
+}
+.info> div> h2 {
+	margin-bottom: 0;
+
+	opacity: .62;
+
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.info> div> p {
+	margin-bottom: 15px;
+
+	opacity: .38;
+
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.social {
+	height: 24px;
+
+	line-height: 24px;
+}
+
+.social> a {
+	display: inline-block;
+
+	width: 24px;
+	height: 24px;
+	margin: 0 10px 0 0;
+	padding: 0;
+
+	text-align: center;
+	vertical-align: top;
+
+	color: #fffffa;
+
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.social> a> img {
+	display: block;
+
+	width: 24px;
+	height: 24px;
+	margin: 0;
+	padding: 0;
 }
 
 .row {
@@ -19,6 +103,8 @@ body {
 }
 
 .row.dark {
+	padding: 60px 45px;
+
 	background-color: #040e17;
 }
 
@@ -59,4 +145,26 @@ body {
 	content: ' ';
 
 	background-color: rgba(255,255,255,.05);
+}
+
+.progress {
+	background-color: #0b3954;
+}
+
+.progress-bar {
+	background-color: #5cacdc;
+}
+
+.skills .progress {
+	margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+	.photo {
+		margin: 60px auto 0 auto;
+	}
+
+	.info> div> * {
+		text-align: center;
+	}
 }
