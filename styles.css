@@ -102,6 +102,9 @@ h2 {
 
 	overflow: hidden;
 
+	margin-top: 90px;
+	margin-bottom: 90px;
+
 	box-shadow: 0 0 10px 0 rgba(0,0,0,.38);
 }
 
@@ -139,7 +142,7 @@ h2 {
 	background: #040e17 url('http://data.inmuzz.com/profile/bi-c4a8c372-ce7e-4b1f-9067-1cb0d044447d.jpg');
 	background-repeat: no-repeat;
 	background-position-x: center;
-	background-position-y: top;
+	background-position-y: -90px;
 
 	filter: blur(25px);
 }
@@ -206,8 +209,22 @@ h2 {
 	margin-bottom: 60px;
 }
 
+.footer {
+	text-align: center;
+
+	opacity: .62;
+
+	font-size: 12px;
+	font-weight: 300px;
+	line-height: 60px;
+}
 
 @media (max-width: 768px) {
+	.container {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
 	.photo {
 		margin: 60px auto 0 auto;
 	}
